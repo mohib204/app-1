@@ -1,0 +1,8 @@
+.drop{
+  display: flex;
+  background: linear-gradient(rgba(172, 109, 255, 0.877), rgba(250, 250, 250, 0.596),rgba(255, 231, 18, 0.658));
+  }
+  .drop ul {
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }

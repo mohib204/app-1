@@ -1,0 +1,148 @@
+/* General Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+  color: white;
+  position: relative;
+  height: 30px;
+}
+
+.rope {
+  padding-right: 24px;
+  background-repeat: no-repeat;
+  margin-top: 10px;
+}
+
+.navbar-brand a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 1px;
+  margin-right: 30px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: hsl(0, 100%, 50%);
+}
+.toggle-label{
+  margin-right: 40px;
+}
+
+/* Mobile Styles */
+.toggle-input {
+  display: none;
+}
+.small-image {
+  width: 70px;
+  height: 50px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: solid rgb(0, 0, 0);
+}
+.toggle-label {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .toggle-label {
+      display: block;
+  }
+
+  .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: #000;
+      padding: 10px;
+      border-radius: 8px;
+      width: 150px;
+  }
+
+  .toggle-input:checked + .toggle-label + .navbar-links {
+      display: flex;
+  }
+
+  .navbar-links li {
+      margin: 10px 0;
+  }
+}
+
+/* Rope styles */
+.rope-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Position rope to the right side */
+  cursor: pointer;
+}
+
+.rope {
+  width: 20px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+/* In your CSS file */
+
+
+.navbarbrand{
+  width: 100px;
+  height: 100px;
+}
+
+.rope-image {
+  width: 70px;
+  height: 80px;
+  transition: transform 0.2s ease;
+}
+
+/* Dropdown styles */
+.dropdown-container {
+  position: absolute;
+  right: 40px;
+  top: 60px;
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 5px;
+  margin-top: 40px;
+  margin-right: 10px;
+  background: linear-gradient(45deg, #28b8ea, #ffffff, blue);
+
+  text-decoration: none;
+  border-radius: 50px;
+  border: solid 2px black;
+  
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(rgb(37, 37, 255),white lightblue); /* Gradient background */
+
+}
